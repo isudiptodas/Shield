@@ -21,8 +21,8 @@ export const verifyEmail = async (req, res) => {
             host: 'smtp.gmail.com',
             port: 465,
             auth: {
-                user: 'shield.addon@gmail.com',
-                pass: 'humudrvyvmvxtcrx'
+                user:  process.env.SHIELD_EMAIL,
+                pass:  process.env.SHIELD_PASSWORD
             }
         });
 
